@@ -1,6 +1,9 @@
-# Vendors
+# Node
 node_modules/
-
-# Build
-build/
 /npm-debug.log
+
+# For build
+build/
+
+# No word temp files
+~*
