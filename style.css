@@ -1,0 +1,19 @@
+body {
+    font-family: "Comic Sans", cursive;
+    margin: 0;
+    background: yellow;
+}
+
+.header {
+    background: blue;
+    color: white;
+    padding: 5px;
+    font-size: 60px;
+}
+
+.download {
+    background: green;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+}
