@@ -5,13 +5,52 @@ module.exports = function(grunt) {
             options: {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
-            build: {
-                src: 'src/script.js',
-                dest: 'build/script.min.js'
+            target: {
+                files: [{
+                    expand: true,
+                    cwd: 'build/',
+                    src: ['**/*.js'],
+                    dest: 'build/'
+                }]
+            }
+        },
+        htmlmin: {
+            options: {
+                removeComments: true,
+                collapseWhitespace: true
+            },
+            target: {
+                files: [{
+                    expand: true,
+                    cwd: 'build/',
+                    src: ['**/*.html', '**/*.htm'],
+                    dest: 'build/'
+                }]
+            }
+        },
+        cssmin: {
+            target: {
+                files: [{
+                    expand: true,
+                    cwd: 'build/',
+                    src: ['**/*.css'],
+                    dest: 'build/'
+                }]
+            }
+        },
+        copy: {
+            main: {
+                expand: true,
+                cwd: 'src',
+                src: '**/*',
+                dest: 'build/'
             }
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.registerTask('default', ['uglify']);
+    var modules = ['copy','uglify','cssmin','htmlmin'];
+    for(i=0;i<modules.length;i++) {
+        grunt.loadNpmTasks('grunt-contrib-'+modules[i]);
+    }
+    grunt.registerTask('default', modules);
 };
