@@ -34,3 +34,8 @@ body {
 .download:hover {
     transform: rotateZ(360deg) scale(2);
 }
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
