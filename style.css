@@ -10,6 +10,12 @@ body {
     padding: 5px;
     font-size: 60px;
 }
+.motto {
+    position: absolute;
+    top: 0;
+    right: 5px;;
+    font-size: 15px;
+}
 
 .list {
     margin: auto;
@@ -21,7 +27,7 @@ body {
     margin: 5px;
 }
 .download {
-    background: green;
+    background: lime;
     display: inline-block;
     padding: 5px;
     margin: 5px;
