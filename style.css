@@ -11,9 +11,26 @@ body {
     font-size: 60px;
 }
 
+.list {
+    margin: auto;
+}
+.list tr {
+    display: block;
+    border: 5px solid black;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    margin: 5px;
+}
 .download {
     background: green;
     display: inline-block;
     padding: 5px;
     margin: 5px;
+    transition: all 1s;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.download:hover {
+    transform: rotateZ(360deg) scale(2);
 }
