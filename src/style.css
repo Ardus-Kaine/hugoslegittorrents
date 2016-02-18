@@ -1,10 +1,16 @@
+@font-face {
+    font-family: "Manga Sans";
+    src: url("Manga_Sans.ttf");
+}
+
 .hidden {
     display: none;
 }
 
 body {
-    font-family: "Comic Sans", cursive;
+    font-family: "Manga Sans", cursive;
     margin: 0;
+    font-size: 20px;
     background: yellow;
 }
 
@@ -12,13 +18,14 @@ body {
     background: blue;
     color: white;
     padding: 5px;
-    font-size: 60px;
+    padding-left: 20px;
+    font-size: 64px;
 }
 .motto {
     position: absolute;
-    top: 0;
+    top: 5px;
     right: 5px;;
-    font-size: 15px;
+    font-size: 24px;
 }
 
 .list {
@@ -60,6 +67,7 @@ footer {
 .popup {
     margin: auto;
     position: fixed;
+    padding: 10px;
     top: 0;
     bottom: 0;
     left: 0;
