@@ -35,6 +35,10 @@ function download() {
         progress.innerHTML = progress.innerHTML+" ERROR";
         setTimeout(download, 50);
     } else {
+<<<<<<< HEAD
         progress.style.transform = "scale(3) rotateZ(30deg)";
+=======
+        progress.style.transform = "scale(2) rotateZ(30deg)";
+>>>>>>> origin/dev
     }
 }
