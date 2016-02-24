@@ -7,13 +7,9 @@ build/
 
 # No word temp files
 ~*Coreth.htm
-Radiant Flash..htm
-Wheatly.htm
-popular_belief.htm
-Coreth.htm
-Radiant Flash..htm
-Wheatly.htm
-popular_belief.htm
+~*Radiant Flash..htm
+~*Wheatly.htm
+~*popular_belief.htm
 Coreth.htm
 Radiant Flash..htm
 Wheatly.htm
